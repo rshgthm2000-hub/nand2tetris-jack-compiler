@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is a **complete two-pass compiler** for the **Nand2Tetris** course, implemented entirely in **Python**. It translates high-level, object-oriented **Jack source code (`.jack`)** into **Virtual Machine (VM) bytecode (`.vm`)**, acting as the vital link between high-level programming and the underlying stack machine architecture.
+This project is a **complete two-pass compiler** for the **Nand2Tetris** course, implemented entirely in **Python**. It translates high-level, object-oriented **Jack source code (`.jack`)** into **Virtual Machine (VM) bytecode (`.vm`)`)**, acting as the vital link between high-level programming and the underlying stack machine architecture.
 
 The compiler features a robust modular design, incorporating a custom **lexical analyzer**, **recursive descent parser**, **scoped symbol table**, and a specialized **VM instruction writer**. It processes either a single `.jack` source file or an entire directory of files to generate the corresponding runnable VM targets.
 
@@ -28,6 +28,7 @@ The compiler features a robust modular design, incorporating a custom **lexical 
 
 ## 📂 Project Structure
 
+```
 nand2tetris-jack-compiler/
 ├── Jack_Compiler.py        // Main driver script that coordinates compilation
 ├── token_reader.py         // Tokenizer that strips comments and isolates lexical atoms
@@ -36,7 +37,7 @@ nand2tetris-jack-compiler/
 ├── vm_writer.py            // Low-level abstraction interface for writing output bytecode
 ├── error_reporter.py       // System for identifying and displaying parsing errors
 └── README.md
-
+```
 
 ---
 
@@ -50,26 +51,38 @@ No external libraries or heavy dependencies are required. All you need is a stan
 Compile a single Jack source file:
 ```bash
 python Jack_Compiler.py Main.jack
+```
+
 Compile a directory containing multiple Jack files:
-
-Bash
+```bash
 python Jack_Compiler.py SquareGame/
-📘 Learning Outcomes
-Mastery over building a clean two-pass compilation pipeline from scratch.
+```
 
-In-depth practical exposure to recursive descent parsing techniques.
+---
 
-Thorough understanding of how object allocation, pointer management, and data encapsulation operate beneath high-level programming syntax.
+## 📘 Learning Outcomes
 
-Deepened structural design and file organization skills using Python.
+* Mastery over building a clean two-pass compilation pipeline from scratch.
+* In-depth practical exposure to recursive descent parsing techniques.
+* Thorough understanding of how object allocation, pointer management, and data encapsulation operate beneath high-level programming syntax.
+* Deepened structural design and file organization skills using Python.
 
-📖 References
-Nand2Tetris Course Official Site
+---
 
-The Elements of Computing Systems by Noam Nisan and Shimon Schocken
+## 📖 References
 
-🧑‍💻 Author
-RISHI GOUTHAM Python | Software Architecture | Computer Science Student
+* Nand2Tetris Course Official Site
+* The Elements of Computing Systems by Noam Nisan and Shimon Schocken
 
-📄 License
+---
+
+## 🧑‍💻 Author
+
+**RISHI GOUTHAM** Python | Software Architecture | Computer Science Student
+
+---
+
+## 📄 License
+
 This project is created for educational purposes as part of the Nand2Tetris computer system engineering course.
+```
